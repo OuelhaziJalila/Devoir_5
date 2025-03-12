@@ -16,15 +16,14 @@
 	</form>
 	<table border="1" width="80%">
 		<tr>
-			<th>ID</th>
-			<th>Nom</th>
-			<th>Prix</th>
+			<th>ID</th><th>Titre</th><th>Durée</th><th>Actions</th>
+
 		</tr>
-		<c:forEach items="${modele.produits}" var="p">
+		<c:forEach items="${modele.musique}" var="p">
 			<tr>
-				<td>${p.idProduit}</td>
-				<td>${p.nomProduit}</td>
-				<td>${p.prix}</td>
+				<td>${m.idMusique}</td>
+				<td>${m.titre}</td>
+				<td>${m.duree}</td>
 			</tr> 
 		</c:forEach>
 	</table>
